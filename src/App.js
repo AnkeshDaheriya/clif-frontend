@@ -52,8 +52,8 @@ import Profile from "./dashboard/pages/Profile";
 import Learn from "./dashboard/pages/Learn";
 import Jobs from "./dashboard/pages/Jobs";
 import HelpCenter from "./dashboard/pages/HelpCenter";
-import Settings  from "./dashboard/pages/Settings";
-
+import Settings from "./dashboard/pages/Settings";
+import ResumeBuilder from "./dashboard/pages/ResumeBuilder";
 const App = () => {
   return (
     <BrowserRouter>
@@ -102,7 +102,7 @@ const App = () => {
           {/* <Route path="/careerpath" element={<CareerPath />} /> */}
           <Route path="/mile-stone1" element={<MileStone1 />} />
           <Route path="/career-growth" element={<CareerProgress />} />
-          <Route path="/career-growth/:id" element={<CareerProgress />} />
+          <Route path="/career-growth/:id" element={<CareerProgress />} />
           <Route path="/mentor" element={<Mentor />} />
           <Route path="/profile" element={<Profile />} />
           {/* <Route path="/groups" element={<Groups />} /> */}
@@ -110,6 +110,7 @@ const App = () => {
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/helpcenter" element={<HelpCenter />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/resume-builder" element={<ResumeBuilder />} />
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
