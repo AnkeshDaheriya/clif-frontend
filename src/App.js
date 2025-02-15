@@ -41,18 +41,17 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Resource from "./pages/Resource";
 import Dashboard from "./dashboard/pages/Dashboard";
-// import CareerPath from "./dashboard/pages/CareerPath";
 import "./assets/scss/app.scss";
 import SkillAssessment from "./dashboard/pages/SkillAssessment";
-import MileStone1 from "./milstones/MileStone1";
-import CareerProgress from "./careerGrowth/CareerProgress";
 import Mentor from "./dashboard/pages/Mentor";
 import Profile from "./dashboard/pages/Profile";
-// import Groups from "./dashboard/pages/Groups";
 import Learn from "./dashboard/pages/Learn";
 import Jobs from "./dashboard/pages/Jobs";
 import HelpCenter from "./dashboard/pages/HelpCenter";
-import Settings  from "./dashboard/pages/Settings";
+import Settings from "./dashboard/pages/Settings";
+import CareerPath from "./careerPath/CareerGrowth";
+
+
 
 const App = () => {
   return (
@@ -99,13 +98,9 @@ const App = () => {
           {/* dashboard routes */}
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/skillassessment" element={<SkillAssessment />} />
-          {/* <Route path="/careerpath" element={<CareerPath />} /> */}
-          <Route path="/mile-stone1" element={<MileStone1 />} />
-          <Route path="/career-growth" element={<CareerProgress />} />
-          <Route path="/career-growth/:id" element={<CareerProgress />} />
+          <Route path="/careerpath" element={<CareerPath />} />
           <Route path="/mentor" element={<Mentor />} />
           <Route path="/profile" element={<Profile />} />
-          {/* <Route path="/groups" element={<Groups />} /> */}
           <Route path="/learn" element={<Learn />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/helpcenter" element={<HelpCenter />} />

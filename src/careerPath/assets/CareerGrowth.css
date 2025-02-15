@@ -1,0 +1,167 @@
+/* CareerGrowth.css */
+
+.career-growth-wrapper {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.page-content {
+    padding-top: 4rem; /* Adjust as needed */
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Speedo Meter Styles */
+.speedo-meter {
+    display: inline-block;
+    margin: 0.5rem;  /* Reduced margin */
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(102, 0, 204, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.speedo-meter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(102, 0, 204, 0.15);
+}
+
+.meter-svg {
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: -1rem auto; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.gauge-background {
+    transition: all 0.3s ease;
+}
+
+
+.gauge-fill {
+    transition: all 0.5s ease-out;
+    stroke-linecap: round;
+}
+
+.gauge-hand {
+    transition: all 0.5s ease-out;
+    transform-origin: center 95%;  /* Adjusted transform origin */
+}
+
+.gauge-center {
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+}
+
+
+.gauge-value {
+    transition: all 0.3s ease;
+}
+
+.meter-label {
+    margin-top: 0.5rem;  /* Reduced top margin */
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.speedo-meter.large .meter-label {
+    font-size: 1.3rem;
+}
+
+.meters-section {
+    margin-top: 2rem; /* Adjust as needed */
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.meters-section .row {
+    margin: -0.5rem;  /* Negative margin to counter the speedo-meter margins */
+}
+
+/* Milestone Card Styles */
+.milestone-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    height: 100%;
+    min-height: 300px;
+}
+
+.milestone-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(133, 91, 188, 0.32);
+}
+
+.milestone-card h3 {
+    color: #6600CC;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.milestone-content {
+    padding: 1rem 0;
+    margin-top: 8rem;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.progress-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.progress-value {
+    color: #963dee;
+    font-weight: 600;
+}
+
+.progress {
+    height: 1.2rem;
+    background-color: #f0f0f0;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background-color: #7e22d9;
+    transition: width 1s ease-in-out;
+}
+
+.section-title {
+    color: #6600CC;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .speedo-meter svg {
+        width: 200px;
+    }
+    
+    .speedo-meter.large svg {
+        width: 250px;
+    }
+    
+    .milestone-card {
+        margin-bottom: 1rem;
+    }
+}
