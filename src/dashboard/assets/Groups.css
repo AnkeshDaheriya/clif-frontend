@@ -1,0 +1,43 @@
+/* Add this CSS to your stylesheet */
+.groups-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .groups-title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  .card {
+    transition: transform 0.2s ease-in-out;
+    background: white;
+  }
+  
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .group-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .group-details {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+  
+  .joined-groups-section .card {
+    background-color: #fafafa;
+  }
+  
+  .groups-wrapper {
+    padding-top: 70px; /* Adjust based on your header height */
+  }

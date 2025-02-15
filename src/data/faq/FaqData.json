@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "What is ClIF.ai?",
+        "body": "A career management software using AI to help individuals upskill, land career opportunities, and achieve career wellness."
+    },
+    {
+        "id": 2,
+        "title": "How does the membership work?",
+        "body": "Pay yearly and access all resources."
+    },
+    {
+        "id": 3,
+        "title": "How to reach CLIF ai?.",
+        "body": "You can reach us anytime at info@clif.ai."
+    },
+    {
+        "id": 4,
+        "title": "Which industries do you focus on?",
+        "body": "We focus on technology, content creation, small business, and equity."
+    },
+    {
+        "id": 5,
+        "title": "Where should I start first?",
+        "body": "You should start with our CLIF Playbook that provides step by step guidance."
+    },
+    {
+        "id": 6,
+        "title": "Where can I find reviews?",
+        "body": "Our testimonials can be found on the home page."
+    },
+     {
+        "id": 7,
+        "title": "Do I have to complete all the steps?",
+        "body": "We recommend completing all the steps for higher success rates, but you don't have to."
+    },
+    {
+        "id": 8,
+        "title": "Which path in tech should I work in?",
+        "body": "Take our tech questionnaire!"
+    },
+    {
+        "id": 9,
+        "title": "How long are the interactive learning modules?",
+        "body": "It varies per sector."
+    },
+    {
+        "id": 10,
+        "title": "Is a job guaranteed?",
+        "body": "If you follow each step then yes! "
+    },
+    {
+        "id": 11,
+        "title": "Can I reach out to team leads anytime?",
+        "body": "Yes we have an open schedule available anytime to meet with you!"
+    },
+     {
+        "id": 12,
+        "title": "Did you follow us on linkedin and instagram?",
+        "body": "Yay! Send us an email so we can give you a discount."
+    }
+
+
+]

@@ -1,0 +1,84 @@
+.learn-wrapper {
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.learn-content h1 {
+    color: #6600CC;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#beginnerh2 {
+    color: #7107db !important;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.select-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #6600CC;
+}
+
+.form-select {
+    appearance: none;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    border-color: #6600CC;
+    box-shadow: 0 0 0 0.2rem rgba(102, 0, 204, 0.25);
+}
+
+.course-card .card {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+}
+
+.course-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(113, 3, 222, 0.306);
+}
+
+.course-card .card-title {
+    color: #6600CC;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.course-icon {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.platform-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(102, 0, 204, 0.1);
+    color: #6600CC;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .learn-content h1 {
+        font-size: 2rem;
+    }
+    
+    .course-card .card {
+        margin-bottom: 1rem;
+    }
+}

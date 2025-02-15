@@ -1,0 +1,53 @@
+[
+
+    {
+        "fromtext": "Yelp",
+        "from": "/images/icon/yelp-2.png",
+        "description": "“ The personalized learning paths gave me clear, actionable steps that allowed me to grow in my role. CLIF AI made my professional development so much easier”",
+        "authorimg": "/images/testimonial/testimonial-1.png",
+        "authorname": "James K.",
+        "authordesig": "Software Engineer"
+    },
+    {
+        "fromtext": "An Incredible Learning Experience",
+        "from": "/images/icon/google-2.png",
+        "description": "“ I’ve gained new skills through CLIF AI’s  expert-led courses, and it’s opened up doors I never thought I'd walk through. The career matchmaking service is top-notch! ”",
+        "authorimg": "/images/testimonial/testimonial-2.png",
+        "authorname": "Emily W.",
+        "authordesig": "Data Analyst"
+    },
+    {
+        "fromtext": "Facebook",
+        "from": "/images/icon/fb-2.png",
+        "description": "“ Before CLIF AI, I felt stuck in my career. Now, I’m tackling new challenges and advancing with confidence, thanks to the world-class training and mentorship I received”",
+        "authorimg": "/images/testimonial/testimonial-3.png",
+        "authorname": "Sofia R.",
+        "authordesig": "Project Manager"
+    },
+    {
+        "fromtext": "Yelp",
+        "from": "/images/icon/yelp-2.png",
+        "description": "“ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”",
+        "authorimg": "/images/testimonial/testimonial-1.png",
+        "authorname": "Darrell Steward",
+        "authordesig": "Executive Chairman"
+    },
+    {
+        "fromtext": "Google",
+        "from": "/images/icon/google-2.png",
+        "description": "“ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”",
+        "authorimg": "/images/testimonial/testimonial-2.png",
+        "authorname": "Savannah Nguyen",
+        "authordesig": "Executive Chairman"
+    },
+    {
+        "fromtext": "Facebook",
+        "from": "/images/icon/fb-2.png",
+        "description": "“ Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”",
+        "authorimg": "/images/testimonial/testimonial-3.png",
+        "authorname": "Floyd Miles",
+        "authordesig": "Executive Chairman"
+    }
+   
+
+]

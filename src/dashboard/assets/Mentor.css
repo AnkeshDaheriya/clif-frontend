@@ -1,0 +1,48 @@
+/* Mentor.css */
+.mentor-card {
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+  }
+  
+  .mentor-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .gap-4 {
+    gap: 1.5rem;
+  }
+  
+  .max-width-4xl {
+    max-width: 896px;
+    margin: 0 auto;
+  }
+  
+  /* Custom styles for nav tabs */
+  .nav-tabs .nav-link.active {
+    border-bottom: 2px solid #6600CC;
+    border-color: transparent;
+    border-bottom-color: #6600CC;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #6600CC;
+  }
+  
+  /* Custom scrollbar for the recommended section */
+  .overflow-auto::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .overflow-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .overflow-auto::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .overflow-auto::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

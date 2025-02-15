@@ -1,0 +1,146 @@
+/* Sidebar Styles */
+.left-sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Logo Styles */
+  .brand-logo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: block;
+    padding: 15px 0;
+  }
+  
+  .logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .sidebar-toggler {
+    color: #6c757d;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  
+  /* Navigation Styles */
+  .sidebar-nav {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem 0;
+  }
+  
+  .nav-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin: 4px 16px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #6c757d !important;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #eadef8;
+    color: #7366ff;
+  }
+
+  
+  
+  .nav-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    color: #7366ff;
+  }
+  
+  .nav-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  /* Profile Section Styles */
+  .profile-sections {
+    margin: 16px;
+    background: #f8f2ff;
+    border-radius: 10px;
+  }
+  
+  .profile-image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .profile-info h6 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2a3547;
+  }
+  
+  .profile-info span {
+    font-size: 0.8rem;
+  }
+  
+  .logout-btn {
+    background: transparent;
+    border: none;
+    color: #7366ff;
+    padding: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    color: #5b50cc;
+  }
+  
+  /* Scrollbar Styles */
+  .sidebar-nav::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .sidebar-nav::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .sidebar-nav::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1199px) {
+    .left-sidebar {
+      transform: translateX(-100%);
+      z-index: 1000;
+    }
+    
+    .left-sidebar.show {
+      transform: translateX(0);
+    }
+  }
