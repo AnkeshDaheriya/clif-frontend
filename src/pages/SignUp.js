@@ -6,6 +6,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import axios from "axios";
 import { FaMehBlank } from "react-icons/fa";
+import API_BASE_URL from "./../common/config";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -20,7 +21,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const API_BASE_URL = "http://localhost:5000";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -367,7 +367,8 @@ const SignUp = () => {
                             alignItems: "center",
                             justifyContent: "center",
                             backgroundColor: "#FFFFFF",
-                          }}>
+                          }}
+                        >
                           <img
                             src="https://www.svgrepo.com/show/452216/google.svg"
                             alt="Google Icon"
@@ -382,7 +383,8 @@ const SignUp = () => {
                         </div>
                         <form
                           onSubmit={handleSubmit}
-                          className="axil-contact-form">
+                          className="axil-contact-form"
+                        >
                           <div className="row">
                             <div className="col-lg-6">
                               <div className="form-group">
@@ -463,7 +465,8 @@ const SignUp = () => {
                               />
                               <label
                                 className="form-check-label"
-                                htmlFor="checkbox">
+                                htmlFor="checkbox"
+                              >
                                 I agree to the with{" "}
                                 <Link to="">
                                   <u> Terms of services </u>
@@ -481,7 +484,8 @@ const SignUp = () => {
                             <button
                               type="submit"
                               className="axil-btn btn-fill-primary btn-fluid btn-primary"
-                              name="submit-btn">
+                              name="submit-btn"
+                            >
                               Sign Up
                             </button>
                           </div>
@@ -501,7 +505,8 @@ const SignUp = () => {
                     {otpSent && (
                       <form
                         onSubmit={handleSubmit}
-                        className="axil-contact-form">
+                        className="axil-contact-form"
+                      >
                         <div className="form-group">
                           <label>Email address*</label>
                           <input
@@ -532,7 +537,8 @@ const SignUp = () => {
                           <button
                             type="submit"
                             className="axil-btn btn-fill-primary btn-fluid btn-primary"
-                            name="submit-btn">
+                            name="submit-btn"
+                          >
                             Verify OTP
                           </button>
                         </div>
@@ -545,7 +551,8 @@ const SignUp = () => {
                     {!loginSent ? (
                       <form
                         onSubmit={handleResumeSubmit}
-                        className="axil-contact-form">
+                        className="axil-contact-form"
+                      >
                         {/* Resume Upload Field */}
                         <div className="form-group">
                           <label>Upload Resume*</label>
@@ -566,7 +573,8 @@ const SignUp = () => {
                           <button
                             type="submit"
                             className="axil-btn btn-fill-primary btn-fluid btn-primary"
-                            name="submit-btn">
+                            name="submit-btn"
+                          >
                             Continue
                           </button>
                         </div>
@@ -574,7 +582,8 @@ const SignUp = () => {
                     ) : (
                       <form
                         onSubmit={handleSubmit}
-                        className="axil-contact-form">
+                        className="axil-contact-form"
+                      >
                         <div className="row">
                           {/* First Name */}
                           <div className="col-lg-4">
@@ -649,7 +658,8 @@ const SignUp = () => {
                                   />
                                   <label
                                     htmlFor={`age${index}`}
-                                    className="form-check-label">
+                                    className="form-check-label"
+                                  >
                                     {age}
                                   </label>
                                 </div>
@@ -694,7 +704,8 @@ const SignUp = () => {
                                     />
                                     <label
                                       htmlFor={`gender${index}`}
-                                      className="form-check-label">
+                                      className="form-check-label"
+                                    >
                                       {gender}
                                     </label>
                                   </div>
@@ -714,7 +725,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.education}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option disabled>Select Your Education</option>
                                 <option>Undergrad</option>
                                 <option>Bachelors</option>
@@ -735,7 +747,8 @@ const SignUp = () => {
                                 value={formValues.yearOfCompletion}
                                 onChange={handleChange}
                                 className="form-control"
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select Year of Completion
                                 </option>
@@ -800,7 +813,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.currentRole}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select Your Current Role
                                 </option>
@@ -868,7 +882,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.professionalDomain}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select Your Professional Domain
                                 </option>
@@ -942,7 +957,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.desiredRole}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select Your Desired Role
                                 </option>
@@ -1009,7 +1025,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.desiredLocationCountry}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select country
                                 </option>
@@ -1046,7 +1063,8 @@ const SignUp = () => {
                                 className="form-control"
                                 value={formValues.desiredLocationCity}
                                 onChange={handleChange}
-                                required>
+                                required
+                              >
                                 <option value="" disabled>
                                   Select city
                                 </option>
@@ -1118,7 +1136,8 @@ const SignUp = () => {
                           <button
                             name="submit-btn"
                             type="submit"
-                            className="axil-btn btn-fill-primary btn-fluid btn-primary">
+                            className="axil-btn btn-fill-primary btn-fluid btn-primary"
+                          >
                             Continue
                           </button>
                         </div>

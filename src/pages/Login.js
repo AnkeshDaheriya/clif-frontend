@@ -6,7 +6,7 @@ import HeaderFour from "../common/header/HeaderFour";
 import FooterOne from "../common/footer/FooterOne";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-
+import API_BASE_URL from "./../common/config";
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAABWVHcf0TTRvkcDpmhw9pAgFFRlgUteY",
@@ -18,8 +18,6 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
-const baseURL = "http://localhost:5000"; // Backend API URL
 
 // Result component to show after successful login/signup
 const Result = () => {
@@ -52,7 +50,7 @@ const Login = () => {
       // Send data to backend
       console.log("Sending Data to Backend:", { email, firstName, lastName });
 
-      const response = await fetch(`${baseURL}/auth/google`, {
+      const response = await fetch(`${API_BASE_URL}/auth/google`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, firstName, lastName }),
@@ -76,7 +74,7 @@ const Login = () => {
   const handleManualLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${baseURL}/auth/login`, {
+      const response = await fetch(`${API_BASE_URL}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -139,7 +137,8 @@ const Login = () => {
                   <form
                     ref={form}
                     onSubmit={handleManualLogin}
-                    className="axil-contact-form">
+                    className="axil-contact-form"
+                  >
                     <div className="form-group">
                       <label>Email address*</label>
                       <input
@@ -169,7 +168,8 @@ const Login = () => {
                       <button
                         type="submit"
                         className="axil-btn btn-fill-primary btn-fluid btn-primary"
-                        name="submit-btn">
+                        name="submit-btn"
+                      >
                         Log In
                       </button>
                       <button
@@ -182,7 +182,8 @@ const Login = () => {
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                        }}>
+                        }}
+                      >
                         <img
                           src="https://www.svgrepo.com/show/452216/google.svg"
                           alt="Google"
