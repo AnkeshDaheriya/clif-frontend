@@ -33,7 +33,7 @@ const SideBar = () => {
               // { icon: "fas fa-road", text: "Career Path", link: "/careerpath" },
               { icon: "fas fa-briefcase", text: "Jobs", link: "/jobs" },
               { icon: "fas fa-graduation-cap", text: "Learn", link: "/learn" },
-              { icon: "fas fa-file-alt", text: "Resume & Letter", link: "/main/index6.html" },
+              { icon: "fas fa-file-alt", text: "Resume Builder", link: "/main/index6.html" },
               // { icon: "fas fa-users", text: "Groups", link: "/groups" },
               { icon: "fas fa-user", text: "Profile", link: "/profile" },
               { icon: "fas fa-cog", text: "Settings", link: "/settings" },

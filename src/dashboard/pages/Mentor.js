@@ -182,39 +182,10 @@ const Mentor = () => {
                 <Header />
                 <div className="bg-light min-vh-100">
                     <div className="container py-4">
-                        {/* Recommended Section */}
-                        <div className="mb-5">
-                            <h2 className="h4 mb-4 mt-14 text-purple">Recommended Mentors</h2>
-                            <div className="d-flex gap-4 overflow-auto pb-2 pt-2">
-                                {recommendedMentors.map((mentor, index) => (
-                                    <div key={index} className="mentor-card card flex-shrink-0" style={{ width: '280px' }}>
-                                        <div className="card-body">
-                                            <div className="d-flex align-items-center gap-3">
-                                                <img
-                                                    src={mentor.image}
-                                                    alt={mentor.name}
-                                                    className="rounded-circle"
-                                                    style={{ width: '48px', height: '48px', objectFit: 'cover' }}
-                                                />
-                                                <div>
-                                                    <h3 className="h6 mb-1">{mentor.name}</h3>
-                                                    <div className="d-flex align-items-center gap-2 small text-muted">
-                                                        <Calendar size={14} />
-                                                        <span>{mentor.availability}</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p className="small text-muted mt-3 mb-0">{mentor.expertise}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
                         {/* Main Profile Section */}
                         <div className="row">
                             <div className="col-12">
-                                <div className="card profile-card mb-4">
+                                <div className="card profile-card mt-12 mb-4">
                                     <div className="card-body">
                                         <div className="row align-items-center">
                                             <div className="col-md-8">
@@ -267,6 +238,34 @@ const Mentor = () => {
                                         {tabContent[activeTab]}
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        {/* Recommended Section */}
+                        <div className="mb-5">
+                            <h2 className="h4 text-purple">Alternate Mentors</h2>
+                            <div className="d-flex gap-4 overflow-auto pb-2 pt-2">
+                                {recommendedMentors.map((mentor, index) => (
+                                    <div key={index} className="mentor-card card flex-shrink-0" style={{ width: '280px' }}>
+                                        <div className="card-body">
+                                            <div className="d-flex align-items-center gap-3">
+                                                <img
+                                                    src={mentor.image}
+                                                    alt={mentor.name}
+                                                    className="rounded-circle"
+                                                    style={{ width: '48px', height: '48px', objectFit: 'cover' }}
+                                                />
+                                                <div>
+                                                    <h3 className="h6 mb-1">{mentor.name}</h3>
+                                                    <div className="d-flex align-items-center gap-2 small text-muted">
+                                                        <Calendar size={14} />
+                                                        <span>{mentor.availability}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p className="small text-muted mt-3 mb-0">{mentor.expertise}</p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
