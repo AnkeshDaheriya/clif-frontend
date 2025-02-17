@@ -149,6 +149,23 @@ h2
 .preview-header {
   text-align: center;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.preview-header-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.preview-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.5rem;
 }
 
 .preview-name {
@@ -195,6 +212,54 @@ h2
   color: #4b5563;
 }
 
+.preview-signature {
+  display: block;
+  max-width: 150px;
+  max-height: 80px;
+  margin-top: 2rem;
+}
+
+/* File Upload Styles */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 2px dashed #e5e7eb;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.file-upload label:hover {
+  border-color: #2563eb;
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.file-preview img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
 /* Utility Classes */
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -206,6 +271,10 @@ h2
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .w-full {
